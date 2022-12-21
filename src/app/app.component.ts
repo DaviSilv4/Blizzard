@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Desafio-Blizzard2';
+
+  sizeButton = 'button-sm';
 }

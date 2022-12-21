@@ -1,0 +1,133 @@
+header{
+  position: absolute;
+  width: 100%;
+  height: 5.6rem;
+  z-index: 2;
+  border-bottom: 0.2rem solid rgba(255, 255, 255, 0.1);
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5.6em;
+
+  &__logo{
+    display: flex;
+    align-items: center;
+    gap: 8em;
+
+    img{
+      width: 60px;
+    }
+  }
+
+  &__logo::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 4.3rem;
+    height: 0.2rem;
+    background-color: #00AEFF;
+    bottom: -3px;
+    transition: all 1s ease;
+  }
+
+  &__nav{
+    display: flex;
+    align-items: center;
+    gap: 2.1rem;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    button{
+      font-size: 0.9rem;
+      font-weight: 500;
+      background: none;
+      display: flex;
+      align-items: center;
+      gap: 1.4rem;
+      border: 0;
+      color: #fff;
+    }
+  }
+
+  &__menu{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    &--nav{
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__menu-hamburger{
+    background: none;
+    border: none;
+    width: 1.8rem;
+    height: 1.2rem;
+    position: relative;
+    // display: none;
+    margin-left: 5.8rem;
+    padding: 0;
+
+    input{
+      position: absolute;
+      opacity: 0;
+    }
+
+    &--pointer{
+      width: 100%;
+      height: 0.18rem;
+      background-color: #fff;
+      transition: 0.25s ease-in-out;
+      position: absolute;
+
+    }
+
+    &--pointer:nth-child(1){
+      top: 0px;
+    }
+    &--pointer:nth-child(2){
+      top: 8px;
+    }
+    &--pointer:nth-child(3){
+      top: 16px;
+    }
+
+    // &--pointer::after, &--pointer::before{
+    //   content: '';
+    //   width: 100%;
+    //   height: 0.18rem;
+    //   background-color: #fff;
+    //   position: absolute;
+    //   left: 0;
+    // }
+
+    // &--pointer::before{
+    //   top: 6px;
+    // }
+
+    // &--pointer::after{
+    //   bottom: 6px;
+    // }
+  }
+
+
+
+}
+
+#checkbox:checked + label span:nth-child(1){
+  transform: rotate(-45deg);
+  top: 8px;
+}
+#checkbox:checked + label span:nth-child(2){
+  opacity: 0;
+}
+#checkbox:checked + label span:nth-child(3){
+  transform: rotate(45deg);
+  top: 8px;
+}

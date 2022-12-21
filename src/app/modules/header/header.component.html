@@ -1,0 +1,43 @@
+<header>
+  <div class="container">
+    <div class="container__logo">
+      <a>
+        <img src="/assets/logo/logo-blizzard.png" alt="">
+      </a>
+
+      <nav class="container__nav" *ngIf="sumir">
+        <button>
+          <p>Jogos</p>
+        </button>
+        <button>
+          <p>Esportes</p>
+        </button>
+        <a>Loja</a>
+        <a>Notícias</a>
+        <a>Suporte</a>
+      </nav>
+    </div>
+    <div class="container__menu">
+      <div class="container__menu--nav">
+        <app-button [sizeButton]="'button-criar-conta'" *ngIf="sumir">Criar conta</app-button>
+        <app-button [sizeButton]="'button-login'" *ngIf="sumir">Logar</app-button>
+
+        <!-- <button class="container__menu-hamburger teste">
+          <div class="container__menu-hamburger--pointer"></div>
+          <div class="container__menu-hamburger--pointer"></div>
+          <div class="container__menu-hamburger--pointer"></div>
+        </button> -->
+
+        <div class="container__menu-hamburger">
+          <input type="checkbox" id="checkbox">
+
+          <label for="checkbox">
+            <span class="container__menu-hamburger--pointer"></span>
+            <span class="container__menu-hamburger--pointer"></span>
+            <span class="container__menu-hamburger--pointer"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

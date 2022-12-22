@@ -1,0 +1,25 @@
+<main class="container">
+  <header class="content">
+      <div class="content__text">
+        <p *ngIf="sumiu">GAMES</p>
+        <h2>Jogos exclusivos</h2>
+      </div>
+      <div class="content__container">
+        <div class="content__plataforma" *ngIf="sumiu">
+
+        </div>
+        <a>
+          <img src="/assets/jogo-container/more.svg" alt="">
+          Ver todos jogos
+        </a>
+      </div>
+  </header>
+  <div class="container-image">
+    <div class="container-image__list" *ngFor="let jogo of jogoList">
+      <img [src]="jogo.image" alt="" class="container-image__list--image">
+      <img src="" alt="">
+      <!-- <p>{{ jogo.name }}</p>
+      <p>{{ jogo.category }}</p> -->
+    </div>
+  </div>
+</main>

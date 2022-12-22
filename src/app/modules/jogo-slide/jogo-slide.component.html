@@ -18,5 +18,18 @@
       </div>
       <app-button [sizeButton]="'button-md'">Jogue agora</app-button>
     </div>
+    <div class="content-video" *ngIf="sumiu">
+      <img src="/assets/jogo-slide/diabloIV.png" alt="">
+      <div class="video">
+        <p *ngIf="sumiu">Assista o trailer</p>
+        <div class="video__trailer">
+          <img src="/assets/games/diablo-animation-cover.png" alt="">
+          <!-- <img src="/assets/games/diablo-animation.gif" alt=""> -->
+          <button>
+            <img src="/assets/jogo-slide/play.svg" alt="">
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </section>

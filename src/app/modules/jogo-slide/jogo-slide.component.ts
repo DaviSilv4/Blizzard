@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JogoSlideComponent implements OnInit {
 
+  sumiu = false;
+
   constructor() { }
 
   ngOnInit() {

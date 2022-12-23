@@ -1,18 +1,56 @@
+.container{
+  margin-top: 5.4rem;
+}
+
 .content{
   display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 
   &__text{
     display: flex;
     gap: 10.6rem;
-    flex: 1;
+    // flex: 1;
+    color: #fff;
 
     h2{
-      font-size: 1.8rem;
+      font-weight: 700;
+      font-size: 2rem;
+      max-width: 11rem;
+      margin: 0;
+    }
+
+  }
+  &__plataforma{
+    display: flex;
+    gap: 1.5rem;
+    flex: 1;
+    margin-left: 10rem;
+
+    @media(max-width: 1160px){
+      margin-left: 10rem;
+    }
+
+    @media(max-width: 900px){
+      margin-left: 4rem;
+    }
+
+    @media(max-width: 760px){
+      display: none;
+    }
+
+    button{
+      border: none;
+      background: transparent;
     }
   }
 
   &__container{
     display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+    // margin-left: 10rem;
 
     a{
       display: flex;
@@ -60,6 +98,26 @@
       // padding: 0.13rem;
     }
 
+    &__ver-mais{
+      border: 1px solid #212428;
+      border-radius: 0.3rem;
+      display: grid;
+      place-items: center;
+
+      div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      a{
+        display: flex;
+        color: #fff;
+        gap: 0.63rem;
+      }
+    }
+
     &__list{
       position: relative;
       height: 25rem;
@@ -85,6 +143,12 @@
         height: 13rem;
       }
     }
+}
 
+.logo{
 
+  @media(max-width: 768px) {
+    width: 87px;
+    height: 41px;
+  }
 }

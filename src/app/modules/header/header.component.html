@@ -5,7 +5,7 @@
         <img src="/assets/logo/logo-blizzard.png" alt="">
       </a>
 
-      <nav class="container__nav" *ngIf="sumir">
+      <nav class="container__nav" *ngIf="!sumir">
         <button>
           <p>Jogos</p>
         </button>
@@ -19,8 +19,8 @@
     </div>
     <div class="container__menu">
       <div class="container__menu--nav">
-        <app-button [sizeButton]="'button-criar-conta'" *ngIf="sumir">Criar conta</app-button>
-        <app-button [sizeButton]="'button-login'" *ngIf="sumir">Logar</app-button>
+        <app-button [sizeButton]="'button-criar-conta'" *ngIf="!sumir" class="button">Criar conta</app-button>
+        <app-button [sizeButton]="'button-login'" *ngIf="!sumir" class="button">Logar</app-button>
 
         <!-- <button class="container__menu-hamburger teste">
           <div class="container__menu-hamburger--pointer"></div>

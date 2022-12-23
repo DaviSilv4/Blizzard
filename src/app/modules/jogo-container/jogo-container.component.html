@@ -1,12 +1,23 @@
-<main class="container">
+<section class="container">
   <header class="content">
       <div class="content__text">
         <p *ngIf="sumiu">GAMES</p>
         <h2>Jogos exclusivos</h2>
       </div>
       <div class="content__container">
-        <div class="content__plataforma" *ngIf="sumiu">
-
+        <div class="content__plataforma" *ngIf="!sumiu">
+          <button>
+            <img src="/assets/jogo-container/battle.svg" alt="">
+          </button>
+          <button>
+            <img src="/assets/jogo-container/nitendo.svg" alt="">
+          </button>
+          <button>
+            <img src="/assets/jogo-container/xbox.svg" alt="">
+          </button>
+          <button>
+            <img src="/assets/jogo-container/playstation.svg" alt="">
+          </button>
         </div>
         <a>
           <img src="/assets/jogo-container/more.svg" alt="">
@@ -21,5 +32,14 @@
       <!-- <p>{{ jogo.name }}</p>
       <p>{{ jogo.category }}</p> -->
     </div>
+    <div class="container-image__ver-mais">
+      <div>
+        <img src="/assets/logo/logo-blizzard.png" alt="" class="logo">
+        <a>
+          <img src="/assets/jogo-container/more-game.svg" alt="">
+          Ver todos jogos
+        </a>
+      </div>
+    </div>
   </div>
-</main>
+</section>

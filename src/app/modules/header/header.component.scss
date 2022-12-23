@@ -51,6 +51,10 @@ header{
       border: 0;
       color: #fff;
     }
+
+    @media(max-width: 1160px) {
+      display: none;
+    }
   }
 
   &__menu{
@@ -70,7 +74,7 @@ header{
     width: 1.8rem;
     height: 1.2rem;
     position: relative;
-    // display: none;
+    display: none;
     margin-left: 5.8rem;
     padding: 0;
 
@@ -96,6 +100,10 @@ header{
     }
     &--pointer:nth-child(3){
       top: 16px;
+    }
+
+    @media(max-width: 1160px) {
+      display:block;
     }
 
     // &--pointer::after, &--pointer::before{
@@ -130,4 +138,11 @@ header{
 #checkbox:checked + label span:nth-child(3){
   transform: rotate(45deg);
   top: 8px;
+}
+
+.button{
+
+  @media(max-width: 680px) {
+    display: none;
+  }
 }

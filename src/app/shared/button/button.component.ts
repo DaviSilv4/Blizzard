@@ -29,7 +29,6 @@ export class ButtonComponent implements OnInit {
       case this.teste.CRIAR_CONTA:
         return this.sizeButton = 'button-criar-conta'
       case this.teste.MD:
-      case 'Papayas':
         return this.sizeButton = 'button-md'
       case this.teste.LG:
         return this.sizeButton = 'button-lg'

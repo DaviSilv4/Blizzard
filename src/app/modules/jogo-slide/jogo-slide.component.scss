@@ -38,11 +38,19 @@
     top: auto;
   }
 
-  @media(max-width: 375px){
+  @media(max-width: 425px){
     flex-direction: row;
     top: auto;
+    left: 0.7rem;
+    bottom: 4.6rem;
+  }
+
+  @media(max-width: 375px){
     bottom: 2.4rem;
-    left: 1.8rem;
+  }
+
+  @media(max-width: 360px){
+    bottom: 0.4rem;
   }
 }
 
@@ -87,7 +95,7 @@
       line-height: 110%;
       margin: 0;
 
-      @media(max-width: 768px){
+      @media(max-width: 1920px){
         max-width: 31.3rem;
         font-size: 3.1rem;
       }
@@ -134,6 +142,10 @@
     right: 1.25rem;
     margin-top: -1.3rem;
     height: 65%;
+  }
+
+  @media(max-width:680px){
+    display: none;
   }
 }
 

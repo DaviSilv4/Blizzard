@@ -12,7 +12,6 @@ import { JogoContainerService } from './service/jogo-container.service';
 export class JogoContainerComponent implements OnInit {
 
   sumiu = false;
-
   jogoList!: JogosModel | any
 
   constructor(private jogoContainerService: JogoContainerService) { }

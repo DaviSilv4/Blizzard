@@ -9,6 +9,8 @@ import { HeaderComponent } from './modules/header/header.component';
 import { JogoContainerComponent } from './modules/jogo-container/jogo-container.component';
 import { JogoSlideComponent } from './modules/jogo-slide/jogo-slide.component';
 import { SharedModule } from './shared/shared.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 @NgModule({
   declarations: [
@@ -21,8 +23,10 @@ import { SharedModule } from './shared/shared.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatProgressBarModule,
     HttpClientModule,
-    SharedModule
+    SharedModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

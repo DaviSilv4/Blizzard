@@ -25,6 +25,7 @@
   button{
     border: none;
     background: transparent;
+    cursor: pointer;
   }
 
   @media(max-width: 1920px){
@@ -90,7 +91,6 @@
   &__text{
 
     h1{
-
       font-size: 2.5rem;
       line-height: 110%;
       margin: 0;
@@ -187,4 +187,14 @@
       }
     }
   }
+}
+
+::ng-deep .mat-progress-bar-fill::after{
+  background-color: #00AEFF;
+}
+::ng-deep .mat-progress-bar-background {
+  fill: transparent;
+}
+::ng-deep .mat-progress-bar-buffer {
+  background: transparent;
 }

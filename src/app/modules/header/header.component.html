@@ -2,32 +2,25 @@
   <div class="container">
     <div class="container__logo">
       <a>
-        <img src="/assets/logo/logo-blizzard.png" alt="">
+        <img [src]="content.logo" alt="">
       </a>
 
-      <nav class="container__nav" *ngIf="!sumir">
+      <nav class="container__nav">
         <button>
-          <p>Jogos</p>
+          <p>{{ content.navigationMenu.jogos.nameNavigation }}</p>
         </button>
         <button>
-          <p>Esportes</p>
+          <p>{{ content.navigationMenu.esportes.nameNavigation }}</p>
         </button>
-        <a>Loja</a>
-        <a>Notícias</a>
-        <a>Suporte</a>
+        <a>{{ content.navigationMenu.loja }}</a>
+        <a>{{ content.navigationMenu.noticias }}</a>
+        <a>{{ content.navigationMenu.suporte }}</a>
       </nav>
     </div>
     <div class="container__menu">
       <div class="container__menu--nav">
-        <app-button [sizeButton]="'button-criar-conta'" *ngIf="!sumir" class="button">Criar conta</app-button>
-        <app-button [sizeButton]="'button-login'" *ngIf="!sumir" class="button">Logar</app-button>
-
-        <!-- <button class="container__menu-hamburger teste">
-          <div class="container__menu-hamburger--pointer"></div>
-          <div class="container__menu-hamburger--pointer"></div>
-          <div class="container__menu-hamburger--pointer"></div>
-        </button> -->
-
+        <app-button [sizeButton]="'button-criar-conta'" class="button">{{ content.criarConta.description }}</app-button>
+        <app-button [sizeButton]="'button-login'" class="button" (click)="loginModal(teste)">{{ content.login.description }}</app-button>
         <div class="container__menu-hamburger">
           <input type="checkbox" id="checkbox">
 
@@ -41,3 +34,4 @@
     </div>
   </div>
 </header>
+<app-modal-login #teste></app-modal-login>

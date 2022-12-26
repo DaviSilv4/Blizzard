@@ -1,0 +1,36 @@
+<div class="bg-modal" *ngIf="!testeClick">
+  <div class="modal">
+    <header>
+      <img src="/assets/logo/logo-battle-net.png" alt="">
+    </header>
+    <form class="form">
+      <div class="form__content">
+        <input type="text" placeholder="E-mail ou telefone">
+        <input type="text" placeholder="Senha">
+      </div>
+      <button>Conectar-se</button>
+    </form>
+    <div class="content">
+      <p class="content__text">ou conecte-se com </p>
+      <div class="content__plataforma">
+        <button>
+          <img src="/assets/modal-login/google.svg" alt="">
+        </button>
+        <button>
+          <img src="/assets/modal-login/apple.svg" alt="">
+        </button>
+        <button>
+          <img src="/assets/modal-login/facebook.svg" alt="">
+        </button>
+      </div>
+      <p class="criar">
+        <a>Crie uma conta</a>
+        Battle.net de graça
+      </p>
+      <a  class="logar">Não consegue logar? </a>
+    </div>
+    <button class="close-modal" (click)="testeModalClick()">
+      <img src="/assets/modal-login/close.svg" alt="">
+    </button>
+  </div>
+</div>

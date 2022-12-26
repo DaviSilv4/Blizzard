@@ -1,0 +1,124 @@
+.bg-modal{
+  position: fixed;
+  inset: 0px;
+  display: grid;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+}
+
+.modal{
+  width: 43.2rem;
+  height: 38rem;
+  background-color: rgb(2, 2, 3);
+  background-image: url('/assets/modal-login/bg-modal.png');
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.3rem;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.form{
+  position: relative;
+  width: 100%;
+  max-width: 26.3rem;
+
+  &__content{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    input{
+      font-size: 0.9rem;
+      font-weight: 500;
+      min-width: 7.2rem;
+      height: 3.3rem;
+      border-radius: 0.5rem;
+      padding-left: 1rem;
+    }
+
+    input:last-child{
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  button{
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #fff;
+    padding: 0px 1rem;
+    background: #00AEFF;
+    border: none;
+    border-radius: 0.2rem;
+    width: 100%;
+    min-width: 7.2rem;
+    height: 3.3rem;
+    transition: all 0.6s ease 0s;
+    cursor: pointer;
+  }
+}
+
+.content{
+  margin-top: 3rem;
+  font-size: 1rem;
+  font-weight: 500;
+
+  &__text{
+    color: #fff;
+    font-size: 0.9rem;
+    margin-bottom: 0.7rem;
+  }
+
+  &__plataforma{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+    button{
+      border-radius: 0.3rem;
+      display: grid;
+      place-items: center;
+      width: 4rem;
+      height: 4rem;
+      background: #fff;
+      color: rgb(2, 2, 3);
+      transition: all 0.2s ease 0s;
+      cursor: pointer;
+    }
+  }
+}
+
+.criar{
+  color: #fff;
+
+  a{
+    color: #00AEFF;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.logar{
+  margin-top: 1rem;
+  display: block;
+  color: #00AEFF;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.close-modal{
+  background: none;
+  position: absolute;
+  top: 3.2rem;
+  right: 3.2rem;
+  transition: all 0.3s ease 0s;
+  border: none;
+  cursor: pointer;
+}

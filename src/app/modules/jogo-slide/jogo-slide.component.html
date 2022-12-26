@@ -13,12 +13,12 @@
   <div class="content">
     <div class="content__text">
       <div>
-        <h1>Retorne à escuridão com o game Diablo IV</h1>
-        <p>O retorno de Lilith traz uma era de escuridão e sofrimento</p>
+        <h1>{{ teste1.title }}</h1>
+        <p>{{ teste1.paragraph }}</p>
       </div>
-      <app-button [sizeButton]="'button-md'">Jogue agora</app-button>
+      <app-button [sizeButton]="'button-md'">{{ teste1.buttonDiscription }}</app-button>
     </div>
-    <div class="content-video" *ngIf="!sumiu">
+    <div class="content-video">
       <img src="/assets/jogo-slide/diabloIV.png" alt="">
       <div class="video">
         <p *ngIf="sumiu">Assista o trailer</p>
@@ -33,3 +33,4 @@
     </div>
   </div>
 </section>
+<mat-progress-bar color="'#00AEFF'" mode="determinate" [value]="nume | async" #teste></mat-progress-bar>

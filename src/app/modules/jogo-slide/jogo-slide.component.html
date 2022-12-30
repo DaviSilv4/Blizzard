@@ -1,13 +1,20 @@
-<section class="container">
+<!-- <section class="container">
+  <div class="background-image"><img [src]="teste1.backgorundImage" alt=""></div>
   <div class="lista-games">
-    <button>
+    <button (click)="contentSlide(name.DIABLO_IV)">
       <img src="/assets/icons/game-1.png" alt="">
     </button>
-    <button>
+    <button (click)="contentSlide(name.HEARTHSTONE)">
       <img src="/assets/icons/game-2.png" alt="">
     </button>
-    <button>
+    <button (click)="contentSlide(name.WAR_CRAFT)">
       <img src="/assets/icons/game-3.png" alt="">
+    </button>
+    <button>
+      <img src="/assets/icons/game-4.png" alt="">
+    </button>
+    <button>
+      <img src="/assets/icons/game-5.png" alt="">
     </button>
   </div>
   <div class="content">
@@ -19,12 +26,12 @@
       <app-button [sizeButton]="'button-md'">{{ teste1.buttonDiscription }}</app-button>
     </div>
     <div class="content-video">
-      <img src="/assets/jogo-slide/diabloIV.png" alt="">
+      <img [src]="teste1.containerImageGame.logoGames" alt="">
       <div class="video">
-        <p *ngIf="sumiu">Assista o trailer</p>
-        <div class="video__trailer">
-          <img src="/assets/games/diablo-animation-cover.png" alt="">
-          <!-- <img src="/assets/games/diablo-animation.gif" alt=""> -->
+        <p>Assista o trailer</p>
+        <div class="video__trailer"  (mouseover)="changeText=true" (mouseout)="changeText=false">
+          <img [src]="teste1.containerImageGame.imageGames" alt="" *ngIf="!changeText">
+          <img [src]="teste1.containerImageGame.videoGames" alt="" *ngIf="changeText">
           <button>
             <img src="/assets/jogo-slide/play.svg" alt="">
           </button>
@@ -33,4 +40,4 @@
     </div>
   </div>
 </section>
-<mat-progress-bar color="'#00AEFF'" mode="determinate" [value]="nume | async" #teste></mat-progress-bar>
+<mat-progress-bar color="'#00AEFF'" mode="determinate" [value]="nume | async" #teste></mat-progress-bar> -->

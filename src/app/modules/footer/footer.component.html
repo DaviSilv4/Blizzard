@@ -1,34 +1,26 @@
 <footer>
   <div class="container">
     <div class="content">
-      <img src="/assets/logo/logo-battle-net.png" alt="" class="content__logo">
-      <h2>Baixe agora o battle.net</h2>
+      <img [src]="content.logo" alt="" class="content__logo">
+      <h2>{{ content.subtitle }}</h2>
       <div class="content__text">
-        <div class="content__text--info">
-          <img src="assets/footer/play.svg" alt="">
-          <p>Seus jogos em um só lugar</p>
-        </div>
-        <div class="content__text--info">
-          <img src="assets/footer/dots-wrapper.svg" alt="">
-          <p>Conecte-se aos seus amigos</p>
-        </div>
-        <div class="content__text--info">
-          <img src="assets/footer/buy.svg" alt="">
-          <p>Compre jogos e itens digitais</p>
+        <div class="content__text--info" *ngFor="let info of content.info">
+          <img [src]="info.icon" alt="">
+          <p>{{ info.description }}</p>
         </div>
       </div>
       <button class="button-plataforma">
-        <img src="/assets/footer/windows.svg" alt="">
-        <span>Baixar para o Windows</span>
+        <img [src]="content.button.imageButton" alt="">
+        <span>{{ content.button.buttonDescription }}</span>
       </button>
       <p class="mobile">
-        <img src="assets/footer/phone.svg" alt="">
-        <span>Também disponível como aplicativo móvel</span>
+        <img [src]="content.mobile.imageMobile" alt="">
+        <span [innerHTML]="content.mobile.mobileDescription"></span>
       </p>
     </div>
   </div>
   <div class="image-footer">
-    <img src="/assets/footer/app.png" alt="" class="image-footer__1">
-    <img src="/assets/footer/app-mini.png" alt="" class="image-footer__2">
+    <img [src]="content.image.backgroundImage" alt="" class="image-footer__1">
+    <img [src]="content.image.imageContainer" alt="" class="image-footer__2">
   </div>
 </footer>

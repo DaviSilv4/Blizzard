@@ -54,6 +54,16 @@ header{
       gap: 1.4rem;
       border: 0;
       color: #fff;
+      cursor: pointer;
+    }
+
+    a{
+      cursor: pointer;
+    }
+
+    a:hover, button:hover{
+      color: #00AEFF;
+      transition: all 0.6s ease
     }
 
     @media(max-width: 1160px) {
@@ -69,6 +79,7 @@ header{
     &--nav{
       display: flex;
       align-items: center;
+      gap: 1rem;
     }
   }
 

@@ -10,8 +10,6 @@ import { JogosModel } from '../model/jogo-container.model';
 })
 export class JogoContainerService {
 
-  private getJogosAPI!: JogosModel
-
   constructor(private http: HttpClient) { }
 
   public getJogos(): Observable<any> {

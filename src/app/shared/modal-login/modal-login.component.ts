@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModalLoginComponent implements OnInit {
 
-testeClick = false;
+testeClick = true;
 
   constructor() { }
 

@@ -20,6 +20,10 @@ export class JogoContainerComponent implements OnInit {
     this.listaDeJogos();
   }
 
+  teste() {
+    console.log('ls')
+  }
+
   public listaDeJogos() {
     this.jogoContainerService.getJogos().pipe(
       tap(res => {
